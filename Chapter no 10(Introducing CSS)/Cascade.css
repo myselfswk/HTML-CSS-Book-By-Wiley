@@ -1,0 +1,30 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+    font-family: "Courier New", monospace;
+    color: coral;
+}
+i {
+    color: green;
+}
+i {  /*2nd i must take command over first i*/  
+    color: red;
+}
+b {
+    color: pink;
+}
+p b {
+    color: blue !important;   /*!important is always run*/
+}
+p b {
+    color: violet;
+}
+p#intro {
+    font-size: 100%;
+    color: cyan;
+}
+p {
+    font-size: 75%;
+    color: darkorange;  /*this color of paragraph put on every paragraph of the html page except those with child attributes(id, b, i etc)*/
+}

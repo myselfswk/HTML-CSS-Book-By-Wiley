@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inline/Block</title>
+        <style type="text/css">
+            .li-inline {
+                display: inline;
+                padding: 5px;
+            }
+            .coming-soon {
+                display: none;
+            }
+            .ul-inline {
+                width: 400px;
+                border: 3px solid darkblue;
+                padding: 1px auto 1px auto;
+            }
+            .li-inline-V {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Change Inline/Block</h1>
+        <h2>Display</h2>
+        <p>The display property allows you to turn an inline element into a block-level element or vice versa, and can also be used to hide an element
+            from the page. The values this property can take are:</p>
+        <ol>
+            <li><h3>inline</h3></li>
+            <p>This causes a block-level element to act like an inline element.</p>
+            <li><h3>block</h3></li>
+            <p>This causes an inline element to act like a block-level element</p>
+            <li><h3>inline-block</h3></li>
+            <p>This causes a block-level element to flow like an inline element, while retaining other features of a block-level element.</p>
+            <li><h3>none</h3></li>
+            <p>This hides an element from the page. In this case, the element acts as though it is not on the page at all (although a user could still see
+                the content of the box if they used the view source option in their browser).</p>
+            <h3>Example:-</h3>
+            <ul class="ul-inline">
+                <li class="li-inline">Home</li>
+                <li class="li-inline">Products</li>
+                <li class="coming-soon li-inline">Services</li>
+                <li class="li-inline">About</li>
+                <li class="li-inline">Contact</li>
+            </ul>
+        </ol>
+        <hr />
+        <h1>Hiding Boxes</h1>
+        <h2>visibility</h2>
+        <p>The visibility property allows you to hide boxes from users but It leaves a space where the element would have been. This property can take two
+            values:</p>
+        <ul>
+            <li><h3>hidden</h3></li>
+            <p>This hides the element.</p>
+            <li><h3>visible</h3></li>
+            <p>This shows the element.</p>
+        </ul>
+        <p>If the visibility of an element is set to hidden, a blank space will appear in its place. If you do not want a blank space to appear, then you
+            should use the display property with a value of none instead </p>
+        <h3>Example:-</h3>
+        <ul class="ul-inline">
+            <li class="li-inline">Home</li>
+            <li class="li-inline">Products</li>
+            <li class="li-inline-V li-inline">Services</li>
+            <li class="li-inline">About</li>
+            <li class="li-inline">Contact</li>
+        </ul>
+        <hr />
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Internal CSS</title>
+        <style type="text/css">
+            body {
+                font-family: arial;
+                background-color: rgb(185,179,175);
+            }
+            h1 {
+                color: rgb(255,255,255);
+            }
+            p {
+                font-family: sans-serif;
+            }
+            li {
+                font-family: fantasy;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Internal CSS-->
+        <h1>Style Tag</h1>
+        <p>You can also include CSS rules within an HTML page by placing them inside a style element, which usually sits inside the head element of the page. </p>
+        <p>The style element should use the type attribute to indicate that the styles are specified in CSS. The value should be text/css.</p>
+        <p>When building a site with more than one page, you should use an external CSS style sheet. This:</p>
+        <ul>
+            <li>Allows all pages to use the same style rules (rather than repeating them in each page).</li>
+            <li>Keeps the content separate from how the page looks</li>
+            <li>Means you can change the styles used across all pages by altering just one file (rather than each individual page).</li>
+        </ul>
+    </body>
+</html>

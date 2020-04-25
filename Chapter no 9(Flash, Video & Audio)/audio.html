@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript">
+            var flashvars = {};
+            var params = {mp3: "audio/test-audio.mp3"};
+            swfobject.embedSWF("flash/player_mp3_1.0.0.swf", "music-player", "200", "20", "8.0.0", flashvars, params);
+        </script>
+    </head>
+    <body>
+        <h1>Adding Audio to your Webpages</h1>
+        <p>By far the most popular format for putting audio on web pages is MP3. As with video, there are three routes commonly taken:</p>
+        <ul>
+            <li><h2>Use a Hosted Service</h2></li>
+            <p>There are several sites that allow you to upload your audio, and provide a player which you can embed in your page, such as</p>
+            <p><a href="https://soundcloud.com/discover">SoundCloud</a></p>
+            <p><a href="https://myspace.com/">MySpace</a></p>
+            <li><h2>Use Flash</h2></li>
+            <p>There are several Flash movies that allow you to play MP3 files; from simple buttons that play one track to complex players that allow you
+                to create playlists and juke boxes</p>
+            <li><h2>Use HTML5</h2></li>
+            <p>HTML5 has introduced a new audio element. Browsers that support this element provide their own controls — much as they do for the video
+                files we just looked at</p>
+        </ul>
+        <p>There are many MP3 players that have already been written in Flash, such as:</p>
+        <p><a href="https://flash-mp3-player.net">flash-mp3-player.net</a></p>
+        <p><a href="musicplayer.sourceforge.net">musicplayer.sourceforge.net</a></p>
+        <p><a href="https://www.wimpyplayer.com/">www.wimpyplayer.com</a></p>
+        <div id="music-player">   <!--some missing file or updates-->
+            <p>You cannot hear this track because this
+            browser does not support our Flash music
+            player.</p>
+        </div>
+        <h1>Adding HTML5 Audio to Your Pages</h1>
+        <h2>Audio Tag</h2>
+        <p>HTML5 introduced the audio element to include audio files in your pages. As with HTML5 video, browsers expect different formats for the audio.
+            The audio element has a number of attributes which allow you to control audio playback:</p>
+        <ul>
+            <li><h3>src</h3></li>
+            <p>This attribute specifies the path to the audio file.</p>
+            <li><h3>controls</h3></li>
+            <p>This attribute indicates whether the player should display controls. If you do not use this attribute, no controls will be shown by default.
+                You can also specify your own controls using JavaScript.</p>
+            <li><h3>autoplay</h3></li>
+            <p>The presence of this attribute indicates that the audio should start playing automatically. (It is considered better practice to let visitors
+                choose to play audio.)</p>
+            <li><h3>preload</h3></li>
+            <p>This attribute indicates what the browser should do if the player is  not set to autoplay. It can have the same values we saw on video
+                element.</p>
+            <li><h3>loop</h3></li>
+            <p>This attribute specifies that the audio track should play again once it has finished.</p>
+        </ul>
+        <audio src="audio/01 - Aaj Dil Shayarana.mp3" controls autoplay>
+            <p>This browser does not support our audio format.</p>
+        </audio>
+        <!--if any browser can't support the format type that your uploaded file have than, you can upload multiple source file with different format-->
+        <h1>Multiple Audio Sources</h1>
+        <h2>Source Tag</h2>
+        <p>It is possible to specify more than one audio file using the source element between the opening audio and closing audio tags (instead of the
+            src attribute on the opening audio tag). This is important because different browsers support different formats for audio files</p>
+        <ul>
+            <li><h3>src</h3></li>
+            <p>The source element uses the src attribute to indicate where the audio file is located.</p>
+            <li><h3>type</h3></li>
+            <p>At the time of writing, the type attribute was not commonly being used on the source element in the same way it was for the video element.</p>
+        </ul>
+        <audio controls autoplay>
+            <source src="audio/Demo.ogg" />
+            <source src="audio/01 - Aaj Dil Shayarana.mp3" />
+            <p>This browser does not support our audio format.</p>
+        </audio>
+    </body>
+</html>

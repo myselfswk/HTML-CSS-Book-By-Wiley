@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box</title>
+        <link rel="stylesheet" href="Box.css">
+    </head>
+    <body>
+        <h2>Box</h2>
+        <p>Every box has three available properties that can be adjusted to control its appearance:</p>
+        <ol>
+            <li><h3>Border</h3></li>
+            <p>Every box has a border (even if it is not visible or is specified to be 0 pixels wide). The border separates the edge of one box from
+                another.</p>
+            <li><h3>Margin</h3></li>
+            <p>Margins sit outside the edge of the border. You can set the width of a margin to create a gap between the borders of two adjacent boxes.</p>
+            <li><h3>Padding</h3></li>
+            <p>Padding is the space between the border of a box and any content contained within it. Adding padding can increase the readability of
+                its contents.</p>
+        </ol>
+        <hr />
+        <h1>Border Width</h1>
+        <h2>border-width</h2>
+        <p>The border-width property is used to control the width of a border. The value of this property can either be given in pixels or using one of the
+            following values:</p>
+        <ul>
+            <li>Thin</li>
+            <li class="tab">Medium</li>             
+            <li>Thick</li>
+        </ul>
+        <p>(You cannot use percentages with this property.)You can control the individual size of borders using four separate properties:</p>
+        <ul>
+            <li>border-top-width</li>
+            <li>border-bottom-width</li>
+            <li>border-left-width</li>
+            <li>border-right-width</li>
+        </ul>
+        <p>You can also specify different widths for the four border values in one property, like so:<br /><br />border-width: 2px 1px 1px 2px;
+            <br /><br />The values here appear in clockwise order: top, right, bottom, left.</p>
+        <h3>Example:-</h3>
+        <p class="para-in-px">My Name is Muhammad Waleed Khan & I Represent Pakistan. Pakistan is My Country & I Love Pakistan</p>
+        <p class="para-in-Func">My Name is Muhammad Waleed Khan & I Represent Pakistan. Pakistan is My Country & I Love Pakistan</p>
+        <p class="para-in-fourD">My Name is Muhammad Waleed Khan & I Represent Pakistan. Pakistan is My Country & I Love Pakistan</p>
+        <br /><br /><br /><br /><br /><br />
+        <hr />
+        <h1>Border Style</h1>
+        <h2>border-style</h2>
+        <p>You can control the style of a border using the border-style property. This property can take the following values:</p>
+        <ul>
+            <li class="BS-solid"><b>solid:</b> a single solid line</li><br />
+            <li class="BS-dotted"><b>dotted:</b> a series of square dots (if your border is 2px wide, then the dots are 2px squared with a 2px gap between
+                each dot)</li><br />
+            <li class="BS-dashed"><b>dashed:</b> a series of short lines</li><br />
+            <li class="BS-double"><b>double:</b> two solid lines (the value of the border-width property creates the sum of the two lines)</li><br />
+            <li class="BS-groove"><b>groove:</b> appears to be carved into the page</li><br />
+            <li class="BS-ridge"><b>ridge:</b> appears to stick out from the page</li><br />
+            <li class="BS-inset"><b>inset:</b> appears embedded into the page</li><br />
+            <li class="BS-outset"><b>outset:</b> looks like it is coming out of the screen</li><br />
+            <li class="BS-H-N"><b>hidden / none:</b> no border is shown</li>
+        </ul>
+        <hr />
+        <h1>Border Color</h1>
+        <h2>border-color</h2>
+        <p class="BC-one">You can specify the color of a border using either RGB values, hex codes or CSS color names It is possible to individually control the colors of
+            the borders on different sides of a box using:</p>
+        <ul>
+            <li class="item-C">border-top-color</li>
+            <li class="item-C">border-right-color</li>
+            <li class="item-C">border-bottom-color</li>
+            <li class="item-C">border-left-color</li>
+        </ul>
+        <p class="BC-two">It is also possible to use a shorthand to control all four border colors in the one property:<br />border-color: darkcyan deeppink darkcyan
+            deeppink;<br />The values here appear in clockwise order: top, right, bottom, left.</p>
+        <hr />
+        <h1>Shorthand</h1>
+        <h2>border</h2>
+        <p class="Border-AIO">The border property allows you to specify the width, style and color of a border in one property (and the values should be coded in that
+            specific order).</p>
+    </body>
+</html>

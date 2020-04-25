@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Cascade.css">
+        <title>Cascade</title>
+    </head>
+    <body>
+        <!--If there are two or more rules that apply to the same element, it is important to understand which will take precedence. -->
+        <!--Last Rule: If the two selectors are identical, the latter of the two will take precedence. Here you can see the second i selector(on css file)
+            takes precedence over the first.-->
+        <!--SPECIFICITY: If one selector is more specific than the others, the more specific rule will take precedence over more general ones.
+            In this example:  (on css file)
+                h1 is more specific than *
+                p b is more specific than p
+                p#intro is more specific than p-->
+        <!--IMPORTANT: You can add !important after any property value to indicate that it should be considered more important than other rules that apply
+            to the same element.-->
+        <h1>Waleed Khan</h1>
+        <b>Waleed Khan</b>
+        <p>My <i>Name</i> is <b>Muhammad Waleed Khan</b></p>
+        <p id="intro">Waleed Khan(This para is with intro id)</p>
+        <p>Waleed Khan</p>
+    </body>
+</html>

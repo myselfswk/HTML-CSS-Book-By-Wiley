@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Class(Saylani) Chapter No Five</title>
+    </head>
+    <body>
+        <!--There are many reasons why you might want to add an image to a web page: you might want to include a logo, photograph, illustration,
+        diagram, or chart.-->
+        <!-- >> Include an image in your web pages using HTML
+             >> Pick which image format to use
+             >> Show an image at the right size
+             >> Optimize an image for use on the web to make pages load faster-->
+        <!--Your Images should be...
+            >>Be relevant
+            >>Convey information
+            >>Convey the right mood
+            >>Be instantly recognisable
+            >>Fit the color palette-->
+        <!--Inline Element: Elements that are next to each other-->
+        <!--Block Element: It is by default, on the next line even there is some space available-->
+        <h1>Adding Image</h1>
+        <h2>Image Tag:</h2>
+        <p>
+            To add an image into the page you need to use an img tag element. This is an empty element (which means there is no closing tag). It must carry the
+            following two attributes:
+        </p>
+        <h3>1) src</h3>
+        <p>
+            This tells the browser where it can find the image file. This will usually be a relative URL pointing to an image on your own site. 
+        </p>
+        <h3>2) alt</h3>
+        <p>
+            This provides a text description of the image which describes the image if you cannot see it. img can't be search by SEO, SEO watch for alt.
+        </p>
+        <p>
+            The text used in the alt attribute is often referred to as alt text. It should give an accurate description of the image content so it can be
+            understood by screen reader software (used by people with visual impairments) and search engines.
+        </p>
+        <h3>title (additional Information)</h3>
+        <p>
+            You can also use the title attribute with the img tag element to provide additional information about the image. Most browsers will 
+            display the content of this attribute in a tootip when the user hovers over the image.
+        </p>
+        <h4>Example:-</h4>
+        <!--height: This specifies the height of the image in pixels.
+            width: This specifies the width of the image in pixels.-->
+        <img src="images/MyPic.jpg" alt="Muhammad Waleed Khan Picture" title="Wedding Ceremony of Waleed's Friend's Sister" height="500px" width="45%">
+        <!--% sign is used for responsiveness of the website, while px is fixed size-->
+        <!--we can use images of different website by absolute url, but it may caused effected our website when the url/location of that particular
+            website change-->
+        <hr />
+        <h2>Where to Place Images in Your Code</h2>
+        <h3>1) Before a paragraph</h3>
+        <img src="images/MyPic.jpg" alt="M Waleed Khan" height="400px" width="40%">
+        <p>My Name is Muhammad Waleed Khan & I Represent Pakistan. Pakistan Zindabad</p>
+        <hr />
+        <h3>2) Inside the start of a paragraph</h3>
+        <p><img src="images/MyPic.jpg" alt="M Waleed Khan" height="400px" width="40%">
+            My Name is Muhammad Waleed Khan & I Represent Pakistan. Pakistan Zindabad
+        </p>
+        <hr />
+        <h3>3) In the middle of a paragraph</h3>
+        <p>
+            My Name is Muhammad Waleed Khan & I Represent Pakistan. <img src="images/MyPic.jpg" alt="M Waleed Khan" height="400px" width="40%"> 
+            Pakistan Zindabad
+        </p>
+        <hr />
+        <h1>Three Rules for Creating Images</h1>
+        <p>There are three rules to remember when you are creating images for your website</p>
+        <h2>Save images in the right format</h2>
+        <p>Websites mainly use images in jpeg, gif, or png format. If you choose the wrong image format then your image might not look as sharp as it should
+            and can make the web page slower to load.</p>
+        <h2>Save images at the right size</h2>
+        <p>You should save the image at the same width and height it will appear on the website. If the image is smaller than the width or height that you have
+            specified, the image can be distorted and stretched. If the image is larger than the width and height if you have specified, the image will take 
+            longer to display on the page.</p>
+        <h2>Use the correct resolution</h2>
+        <p>Computer screens are made up of dots known as pixels. Images used on the web are also made up of tiny dots. Resolution refers to the number of
+            dots per inch, and most computer screens only show web pages at 72 pixels per inch. So saving images at a higher resolution results in images
+            that are larger than necessary and take longer to download.</p>
+        <hr />
+        <h1>Figure</h1>
+        <p>Images often come with captions. HTML5 has introduced a new figure tag element to contain images and their caption so that the two are associated.
+            You can have more than one image inside the figure element as long as they all share the same caption.</p>
+        <h1>figcaption</h1>
+        <p>The figcaption element has been added to HTML5 in order to allow web page authors to add a caption to an image. Before these elements were created
+            there was no way to associate an img tag element with its caption.</p>
+        <h2>Example:</h2>
+        <figure>
+            <img src="images/MyPic.jpg" alt="M Waleed Khan" width="40%" height="400px">
+            <br />
+            <figcaption>
+                My Friend's sister wedding
+            </figcaption>
+        </figure>
+    </body>
+</html>

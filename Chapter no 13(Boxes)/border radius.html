@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border Radius</title>
+        <style type="text/css">
+            /*Rounded borders*/
+            .para-for-border {
+                width: 30%;
+                height: 100px;
+                background-color: #e1ddda;
+                padding: 5px;
+                /*-moz-border-radius: 10px;
+                -webkit-border-radius: 10px;*/
+                border: 5px solid rgb(85, 151, 212);
+                border-radius: 10px;  /*10px round from all directions*/
+            }
+            .div-for-border {
+                width: 30%;
+                height: 200px;
+                background-color: #e1ddda;
+                padding: 5px;
+                /*-moz-border-radius: 10px;
+                -webkit-border-radius: 10px;*/
+                border: 5px solid rgb(85, 151, 212);
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            /*Elliptical Shapes*/
+            .para-for-TL {
+                width: 28%;
+                height: 100px;
+                padding: 25px;
+                background-color: #e1ddda;
+                border: 5px solid rgb(85, 151, 212);
+                /*-moz-border-radius-top-left: 80px 50px;
+                -webkit-border-radius-top-left: 80px 50px;*/
+                border-top-left-radius: 80px;
+            }
+            .para-for-all-C {
+                width: 20%;
+                height: 100px;
+                text-align: center;
+                padding: 10px;
+                background-color: #e1ddda;
+                border: 5px solid rgb(85, 151, 212);
+                /*-moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+                -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;*/
+                border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+                /*can't use display: inline-block because all pararaphs have different values*/
+            }
+            .para-for-circle {
+                width: 170px;
+                height: 170px;
+                text-align: center;
+                padding: 35px;
+                background-color: #e1ddda;
+                border: 5px solid rgb(85, 151, 212);
+                border-radius: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS3: ROUNDED-CORNERS</h1>
+        <h2>border-radius</h2>
+        <p class="para-for-border">CSS3 introduces the ability to create rounded corners on any box, using a property called border-radius. The value
+            indicates the size of the radius in pixels</p>
+        <p class="para-for-border">Older browsers that do not support this property will show a box with right-angled corners.</p>
+        <p class="para-for-border">The -moz-border-radius and -webkit-border-radius properties are not in the CSS specification. However, they are used in
+            some versions of chrome, Firefox, and Safari to offer early support for this style (and therefore can be used to achieve this effect in more
+            browsers).</p>
+        <div class="div-for-border">
+            <p>You can specify individual values for each corner of a box using:</p>
+            <ul>
+                <li>border-top-right-radius</li>
+                <li>border-bottom-right-radius</li>
+                <li>border-bottom-left-radius</li>
+                <li>border-top-left-radius</li>
+            </ul>
+            <p>You can also use a shorthand of these four properties (in clockwise order: top, right, bottom, left).</p>
+        </div>
+        <hr />
+        <h1>CSS3: ELLIPTICAL SHAPES</h1>
+        <h2>border-radius</h2>
+        <p class="para-for-TL">To create more complex shapes, you can specify different distances for the horizontal and the vertical parts of the rounded corners.</p>
+        <p class="para-for-all-C">You can target just one corner using the individual properties for that corner</p>
+        <p class="para-for-circle">There is also a shorthand for targetting all four corners at once; first you specify the four horizontal values, then the four vertical values,
+            as shown in the second shape on the left.</p>
+        <p class="para-for-circle">You can even create a circle by taking a square box and making the border-radius the same height as the square</p>
+        <hr />
+    </body>
+</html>

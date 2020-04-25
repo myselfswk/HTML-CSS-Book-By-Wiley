@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Muhammad Waleed Khan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors</title>
+    </head>
+    <body>
+        <h1 id="top">Kitchen Garden Calendar</h1>
+        <p id="introduction">Here you can read our handy guide about what to do when.</p>
+        <h2>Spring</h2>
+        <ul>
+            <li><a href="#">Spring mulch vegetable beds</a></li>
+            <li><a href="#">Plant out early potatoes</a></li>
+            <li><a href="#">Sow tomato seeds</a></li>
+            <li><a href="#">Sow beet seeds</a></li>
+            <li><a href="#">Sow zucchini seeds</a></li>
+            <li><a href="#">Deadhead rhubarb flowers</a></li>
+        </ul>
+        <p class="note">This page was written by <a href="mailto:fastnegative1004@gmail.com">Email to Waleed</a> for <a href="http://www.example.org">Example
+        </a>.</p>
+        <table border="1" width="100%">
+            <tr>
+                <th width="33%">Selector</th>
+                <th width="33%">Meaning</th>
+                <th width="33%">Example</th>
+            </tr>
+            <tr>
+                <td>Universal Selector</td>
+                <td>Applies to all elements in the document</td>
+                <td><p>* {}</p>Targets all elements on the page</td>
+            </tr>
+            <tr>
+                <td>Type Selector</td>
+                <td>Matches element names</td>
+                <td><p>h1, h2, h3 {}</p>Targets the h1, h2 and h3 elements</td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+                <td><p>.note {}</p>Targets any element whose class attribute has a value of note<p>p.note {}</p>Targets only p elements whose class attribute
+                    has a value of note</td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+                <td><p>#introduction {}</p>Targets the element whose id attribute has a value of introduction</td>
+            </tr>
+            <tr>
+                <td>Child Selector</td>
+                <td>Matches an element that is a direct child of another</td>
+                <td><p>li>a {}</p>Targets any a elements that are children of an li element (but not other a elements in the page)</td>
+            </tr>
+            <tr>
+                <td>Descendant Selector</td>
+                <td>Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+                <td><p>p a {}</p>Targets any a elements that sit inside a p element, even if there are other elements nested between them</td>
+            </tr>
+            <tr>
+                <td>Adjacent Sibling Selector</td>
+                <td>Matches an element that is the next sibling of another</td>
+                <td><p>h1+p {}</p>Targets the first p element after any h1 element (but not other p elements)</td>
+            </tr>
+            <tr>
+                <td>General Sibling Selector</td>
+                <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+                <td><p>h1~p {}</p>If you had two p elements that are siblings of an h1 element, this rule would apply to both</td>
+            </tr>
+        </table>
+        <p><a href="#top">Top of page</a></p>
+    </body>
+</html>

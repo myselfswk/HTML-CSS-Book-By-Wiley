@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  <!--UTF-8 is character coding type-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Class(Saylani) Chapter No Four</title>
+    </head>
+    <body>
+        <!--Links are the defining feature of the web because they allow you to move from one web page to another — enabling the very idea of browsing
+        or surfing.-->
+        <h1>Links:-</h1>
+        <p>You will commonly come across the following types of links:-</p>
+        <ul>
+            <li>Links from one website to another.</li>
+            <li>Links from one page to another on the same website</li>
+            <li>Links from one part of a web page to another part of the same page</li>
+            <li>Links that open in a new browser window</li>
+            <li>Links that start up your email program and address a new email to someone</li>
+        </ul>
+        <h1>Writing Links:-</h1>
+        <!--Links are created using the <a> element. Users can click on anything between the opening <a> tag and the closing </a> tag. You specify 
+        which page you want to link to using the href attribute-->
+        <!--a is anchor tag and domain name is basically url-->
+        <!--The text between the opening <a> tag and closing </a> tag is known as link text.-->
+        <a href="https://www.facebook.com/myselfswk/">Waleed Khan | FaceBook</a>
+        <!--Many people navigate websites by scanning the text for links. Clear link text can help visitors find what they want. -->
+        <!--To write good link text, you can think of words people might use when searching for the page that you are linking to. -->
+        <dl>
+            <dt>Absolute URL:-</dt>
+            <dd>
+                When you link to a different website, the value of the href attribute will be the full web address for the site, which is known as an
+                absolute URL.
+            </dd>
+            <dd>
+                An absolute URL starts with the domain name for that site, and can be followed by the path to a specific page. If no page is specified,
+                the site will display the homepage.
+            </dd>
+        </dl>
+        <!--Links are created using the <a> element which has an attribute called href.-->
+        <p>Movie Reviews:
+            <ul>
+                <li><a href="http://www.empireonline.com">Empire</a></li>
+                <li><a href="http://www.metacritic.com">Metacritic</a></li>
+                <li><a href="http://www.rottentomatoes.com">Rotten Tomatoes</a></li>
+                <li><a href="http://www.variety.com">Variety</a></li>
+            </ul>
+        </p>
+        <dl>
+            <dt>Domain & Sub-Domain:-</dt>
+            <dd>
+                youtube.com is Domain and youtube.com.pk is sub-Domain.
+            </dd>
+        </dl>
+        <ul>
+            <li><a href="https://www.youtube.com/">Youtube.com</a></li>
+            <span>(Domain)</span>
+            <li><a href="https://www.youtube.com/?gl=PK">Youtube.com.pk</a></li>
+            <span>(Sub-Domain)</span>
+        </ul>
+        <hr />
+        <h1>Linking to Other Pages on the Same Site</h1>
+        <dl>
+            <dt>Relative URL</dt>
+            <dd>
+                When you are linking to other pages within the same site, you do not need to specify the domain name in the URL. You can use a
+                shorthand known as a relative URL.
+            </dd>
+            <dd>
+                When linking to other pages within the same site, you can use relative URLs. These are like a shorthand version of absolute URLs because
+                you do not need to specify the domain name.
+            </dd>
+            <dt>Example:-</dt>
+        </dl>
+        <!--If all the pages of the site are in the same folder, then the value of the href attribute is just the name of the file.-->
+        <p>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </p>
+        <!--If you have different pages of a site in different folders, then you can use a slightly more complex syntax to indicate where the page is
+        in relation to the current page. -->
+        <!--On larger websites it's a good idea to organize your code by placing the pages for each different section of the site into a new folder.
+        Folders on a website are sometimes referred to as directories.-->
+        <dl>
+            <dt>Structure:-</dt>
+            <dd>
+                The top-level folder is known as the root folder. The root folder contains all of the other files and folders for a website. 
+            </dd>
+            <dd>Each section of the site is placed in a separate folder; this helps organize the files.</dd>
+            <dt>Relationship:-</dt>
+            <dd>
+                The relationship between files and folders on a website is described using the same terminology as a family tree. 
+            </dd>
+            <dt>HomePage:-</dt>
+            <dd>The main homepage of a site written in HTML (and the homepages of each section in a child folder) is called index.html.</dd>
+        </dl>
+        <!--Every page and every image on a website has a URL (or Uniform Resource Locator). The URL is made up of the domain name followed by the path
+        to that page or image.-->
+        <p>To Understand Parent, Child & GrandChild Relation, we use anchor tag</p>
+        <a href="../Chapter no 3(Lists).html">This Is Our Chapter Three</a>
+        <hr />
+        <h1>Email Links</h1>
+        <!--To create a link that starts up the user's email program and addresses an email to a specified email address, you use the <a> element-->
+        <a href="mailto:fastnegative1004@gmail.com">Email Waleed</a>
+        <h1>Opening Links in a New Window</h1>
+        <!--If you want a link to open in a new window, you can use the target attribute on the opening <a> tag. The value of this attribute
+        should be _blank.-->
+        <a href="https://www.facebook.com/myselfswk/" target="_blank">Waleed Khan|FaceBook</a> (opens in new window)
+        <!--One of the most common reasons a web page author might want a link to be opened in a new window is if it points to another website. In such cases,
+        they hope the user will return to the window containing their site after finishing looking at the other one.-->
+        <!--br*10 + tab = 10 br tag-->
+        <h1>Linking to a Specific Part of the Same Page</h1>
+        <!--At the top of a long page you might want to add a list of contents that links to the corresponding sections lower down. Or you might want to add
+        a link from part way down the page back to the top of it to save users from having to scroll back to the top.-->
+        <h1 id="top">Film-Making Terms</h1>
+        <a href="#arc_shot">Arc Shot</a> <br />
+        <a href="#interlude">Interlude</a> <br />
+        <a href="#prologue">Prologue</a><br /> <br />
+        <h2 id="arc_shot">Arc Shot</h2>
+        <p>A shot in which the subject is photographed by an encircling or moving camera</p>
+        <h2 id="interlude">Interlude</h2>
+        <p>A brief, intervening film scene or sequence, not specifically tied to the plot, that appears within a film</p>
+        <h2 id="prologue">Prologue</h2>
+        <p>A speech, preface, introduction, or brief scene preceding the the main action or plot of a film; contrast to epilogue</p>
+        <hr />
+        <h1>Final Example According to Book</h1>
+        <h1 id="top">Film Folk</h1>
+        <h2>Festival Diary</h2>
+        <p>
+            Here are some of the film festivals we will be attending this year.<br />Please <a href="mailto:fastnegative1004@gmail.com">contact us</a> 
+        if you would like more information.
+        </p>
+        <h3>January</h3>
+        <p><a href="http://www.sundance.org">
+            Sundance Film Festival</a><br />
+            Park City, Utah, USA<br />
+            20 - 30 January 2011
+        </p>
+        <h3>February</h3>
+        <p><a href="http://www.tropfest.com">
+            Tropfest</a><br />
+            Sydney, Australia<br />
+            20 February 2011</p>
+ <!-- additional content -->
+        <p><a href="aboutUs.html">About Film Folk</a></p>
+        <p><a href="#top">Top of page</a></p>
+    </body>
+</html>

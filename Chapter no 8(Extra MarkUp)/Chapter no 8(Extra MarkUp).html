@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="author" content="Muhammad Waleed Khan" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Class(Saylani) Chapter No Eight</title>
+    </head>
+    <body>
+        <!--For html5: <!DOCTYPE html>-->
+        <!--For html4: <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
+        <!--For Transitional XHTML 1.0: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/ 
+            xhtml1-transitional.dtd">-->
+        <!--For Strict XHTML 1.0: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/  xhtml1-strict.dtd">-->
+        <!--an element must be closed with closing tag in the above version-->
+        <!--For XML Declaration: <?xml version="1.0" ?>-->
+        <!--Below code is used as an example of comments-->
+        <!-- start of introduction -->
+        <h1>Current Exhibitions</h1>
+        <h2>Olafur Eliasson</h2>
+        <!-- end of introduction -->
+        <!-- start of main text -->
+        <p>Olafur Eliasson was born in Copenhagen, Denmark in 1967 to Icelandic parents.</p>
+        <p>He is known for sculptures and large-scale  installation art employing elemental materials  such as light, water, and air temperature to
+         enhance the viewer's experience.</p>
+        <hr />
+        <!-- end of main text -->
+        <!--<a href="mailto:info@example.org">Contact</a>-->
+        <h1>ID Attribute:-</h1>
+        <!--Every HTML element can carry the id attribute. It is used to uniquely identify that element from other elements on the page. Its value should
+            start with a letter or an underscore (not a number or any other character). It is important that no two elements on the same page have
+            the same value for their id attributes (otherwise the value is no longer unique).-->
+        <p>My Name is Muhammad Waleed Khan</p>
+        <p id="pullquote">My Name is Muhammad Waleed Khan <span>(without css file, this id is worthless)</span></p>
+        <!--without css file, this id is worthless-->
+        <p>My Name is Muhammad Waleed Khan</p>
+        <h1>Class Attribute:-</h1>
+        <!--Every HTML element can also carry a class attribute. Sometimes, rather than uniquely identifying one element within a document, you will want a
+        way to identify several elements as being different from the other elements on the page. -->
+        <p class="important">My Name is Muhammad Waleed Khan</p>
+        <p>My Name is Muhammad Waleed Khan <span>(without css file, these classes are worthless)</span></p>   <!--without css file, these classes are worthless-->
+        <p class="important admittance">My Name is Muhammad Waleed Khan</p>
+        <hr />
+        <h1>Block Elements</h1>
+        <p>Some elements will always appear to start on a new line in the browser window. These are known as block level elements. </p>
+        <!--Examples of block elements are <h1>, <p>, <ul>, and <li>.-->
+        <h3>Example:-</h3>
+        <h1>Hiroshi Sugimoto</h1>
+        <p>The dates for the ORIGIN OF ART exhibition are as  follows:</p>
+        <ul>
+            <li>Science: 21 Nov - 20 Feb 2010/11</li>
+            <li>Architecture: 6 Mar - 15 May 2011</li>
+            <li>History: 29 May - 21 Aug 2011</li>
+            <li>Religion: 28 Aug - 6 Nov 2011</li>
+        </ul>
+        <h1>Inline Elements</h1>
+        <p>Some elements will always appear to continue on the same line as their neighbouring elements. These are known as inline elements.</p>
+        <!--Examples of inline elements are <a>, <b>, <em>, and <img>.-->
+        <h3>Example:-</h3>
+        <p>Timed to a single revolution of the planet around the sun at a 23.4 degrees tilt that plays out the rhythm of the seasons, this <em>Origins of
+            Art</em> cycle is organized around four themes: <b>science, architecture, history</b> and <b>religion</b>.</p>
+        <hr />
+        <h1>Grouping Text & Elements In a Block</h1>
+        <h2>Div Tag:-</h2>
+        <p>The div element allows you to group a set of elements together in one block-level box. Div is the block element and it dowsn't have visible
+            view. In a browser, the contents of the div element will start on a new line, but other than this it will make no difference to the presentation
+            of the page. It can also make it easier to follow your code if you have used div elements to hold each section of the page.</p>
+        <p>Picture and unordered lines are includes in the div tag.</p>
+        <div id="header">  <!--we can perform some task of this div using id="header" by css-->
+            <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" width="40%" height="400px"/>
+            <ul>
+                <li><a href="../Html & CSS Book By Wiley/Chapter no 4(Links)/home.html">Home</a></li>
+                <li><a href="../Html & CSS Book By Wiley/Chapter no 4(Links)/aboutUs.html">About Us</a></li>
+                <li><a href="../Html & CSS Book By Wiley/Chapter no 4(Links)/ContactUs.html">Contact Us</a></li>
+                <li><a href="../Html & CSS Book By Wiley/Chapter no 4(Links)/services.html">Services</a></li>
+            </ul>
+        </div><!-- end of header -->
+        <hr />
+        <h1>Grouping Text & Elements Inline</h1>
+        <h2>Span:-</h2>
+        <p>The span element acts like an inline equivalent of the div element. It is used to either:</p>
+        <ul>
+            <li>Contain a section of text where there is no other suitable element to differentiate it from its surrounding text</li>
+            <li>Contain a number of inline elements, span can be used in paragraph tags</li>
+        </ul>
+        <h3>Example:-</h3>
+        <p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="gallery">Tate Modern</span> gallery in London in 2003.</p>
+        <!--without css file, this class="gallery" is worthless-->
+        <!--The most common reason why people use <span> elements is so that they can control the appearance of the content of these elements using CSS.-->
+        <hr />
+        <h2>IFrames</h2>
+        <p>An iframe is like a little window that has been cut into your page — and in that window you can see another page. The term iframe is an abbreviation
+            of inline frame. One common use of iframes (that you may have seen on various websites) is to embed a Google Map into a page. </p>
+        <p>The content of the iframe can be any html page (either located on the same server or anywhere else on the web).</p>
+        <iframe width="450" height="350" src="https://www.google.com/maps?q=moma+new+york&amp;output=embed"></iframe>
+        <!--src: the src attribute specifies the URL of the page to show in the frame.
+            height: The height attribute specifies the height of the iframe in pixels.
+            width: The width attribute specifies the width of the iframe in pixels.-->
+        <hr />
+        <!--scrolling: The scrolling attribute will not be supported in HTML5. In HTML 4 and XHTML, it indicates whether the iframe should have scrollbars or
+            not. This is important if the page inside the iframe is larger than the space you have allowed for it (using the height and width attributes).
+            Scrollbars allow the user to move around the frame to see more content. It can take one of three values: yes (to show scrollbars), no (to hide
+            scrollbars) and auto (to show them only if needed).-->
+        <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" width="450" height="350" frameborder="0" scrolling="no"></iframe>
+        <!--frameborder: The frameborder attribute will not be supported in HTML5. In HTML 4 and XHTML, it indicates whether the frame should have a border
+            or not. A value of 0 indicates that no border should be shown. A value of 1 indicates that a border should be shown.-->
+        <!--seamless: In HTML5, a new attribute called seamless can be applied to an iframe where scrollbars are not desired. The seamless attribute (like
+            some other new HTML5 attributes) does not need a value, but you will often see authors give it a value of seamless. Older browsers don't support
+            the seamless attribute. Seamless Should remove frameborder & scrollbar-->
+        <h1>Information About Your Pages</h1>
+        <h2>meta tags:-</h2>
+        <p>The meta element lives inside the head element and contains information about that web page. It is not visible to users but fulfills a number of
+            purposes such as telling search engines about your page, who created it, and whether or not it is time sensitive. (If the page is time sensitive,
+            it can be set to expire).The meta element is an empty element so it does not have a closing tag. It uses attributes to carry the information.</p>
+        <!--The most common attributes are the name and content attributes, which tend to be used together. These attributes specify properties of the entire
+            page. The value of the name attribute is the property you are setting, and the value of the content attribute is the value that you want to give
+            to this property-->
+        <ul>
+            <img src="Images/metaTag.PNG" alt="Information About MetaTag" style="float: right;">
+            <li><h3>description</h3></li>
+            <p>This contains a description of the page. This description is commonly used by search engines to understand what the page is about and should be a
+                maximum of 155 characters. Sometimes it is also displayed in search engine results</p>
+            <li><h3>Keywords</h3></li>
+            <p>This contains a list of commaseparated words that a user might search on to find the page. In practice, this no longer has any noticeable
+                effect on how search engines index your site.</p>
+            <li><h3>robots</h3></li>
+            <p>This indicates whether search engines should add this page to their search results or not. A value of noindex can be used if this page should
+                not be added. A value of nofollow can be used if search engines should add this page in their results but not any pages that it links to.</p>
+            <li><h3>Author</h3></li>
+            <p>This defines the author of the web page.</p>
+            <li><h3>Pragma</h3></li>
+            <p>This prevents the browser from caching the page. (That is, storing it locally to save time downloading it on subsequent visits.)</p>
+            <li><h3>Expires</h3></li>
+            <p>Because browsers often cache the content of a page, the expires option can be used to indicate when the page should expire (and no longer be
+                cached). Note that the date must be specified in the format shown</p>
+        </ul>
+        <hr />
+        <ul>
+            <img src="Images/Characters.PNG" alt="escape characters" style="float: right;">
+            <h1>Escape Characters</h1>
+            <p>There are some characters that are used in and reserved by HTML code. (For example, the left and right angled brackets.)</p>
+            <li>Therefore, if you want these characters to appear on your page you need to use what are termed "escape" characters (also known as escape codes or
+                entity references). For example, to write a left angled bracket, you can use either &lt; or &#60;. For an ampersand, you can use either &amp;
+                or &#38;
+            </li>
+            <br />
+            <li>There are also special codes that can be used to show symbols such as copyright and trademark, currency symbols, mathematical characters, and
+                some punctuation marks. For example, if you want to include a copyright symbol on a web page you can use either &copy; or &#169;.
+            </li>
+            <br />
+            <li>When using escape characters, it is important to check the page in your browser to ensure that the correct symbol shows up. This is because
+                some fonts do not support all of these characters and you might therefore need to specify a different font for these characters in your CSS code.
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border Images</title>
+        <style type="text/css">
+            .image-para-one {
+                width: 30%;
+				height: 60px;
+				border: 11px solid #ffffff;
+                /*-moz-border-image: url("Images/SpaceSample.PNG") 11 11 11 11 stretch;
+                -webkit-border-image: url("Images/SpaceSample.PNG") 11 11 11 11 stretch;*/
+                border-image: url("Images/SpaceSample.PNG") 11 11 11 11 stretch;
+            }
+            .image-para-two {
+                width: 30%;
+				height: 60px;
+				border: 11px solid #ffffff;
+                /*-moz-border-image: url("Images/SpaceSample.PNG") 11 11 11 11 round;
+                -webkit-border-image: url("Images/SpaceSample.PNG") 11 11 11 11 round;*/
+                border-image: url("Images/SpaceSample.PNG") 11 11 11 11 round;
+            }
+            .image-para-three {
+                width: 30%;
+				height: 60px;
+				border: 11px solid #ffffff;
+                /*-moz-border-image: url("Images/SpaceSample.PNG") 11 11 11 11 repeat;
+                -webkit-border-image: url("Images/SpaceSample.PNG") 11 11 11 11 repeat;*/
+                border-image: url("Images/SpaceSample.PNG") 11 11 11 11 repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS3: BORDER IMAGES</h1>
+        <h2>border images</h2>
+        <p>The border-image property applies an image to the border of any box. It takes a background image and slices it into nine pieces. </p>
+        <p>Here is the image. I have added marks where it is sliced in the example, taking 18 pixels from each corner to place an entire circle in each
+            corner. The corner slices are always placed in the four corners of the box, but we have a choice whether the sides are stretched or repeated. </p>
+        <p>This property requires three pieces of information:</p>
+        <!--The -moz-border-image and -webkit-border-image properties are not in the CSS specification but help earlier versions of Chrome, Firefox, and
+            Safari display this effect.-->
+        <ol>
+            <li>The URL of the image </li>
+            <li>Where to slice the image</li>
+            <li>What to do with the straight edges; the possible values are:</li>
+            <ul>
+                <li><b>stretch:</b> stretches the image</li>
+                <li><b>repeat:</b> repeats the image</li>
+                <li><b>round:</b> like repeat but if the tiles do not fit exactly, scales the tile image so they will</li>
+            </ul>
+        </ol>
+        <h3>Example:-</h3>
+        <p class="image-para-one"></p>
+        <p class="image-para-two"></p>
+        <p class="image-para-three"></p>
+    </body>
+</html>

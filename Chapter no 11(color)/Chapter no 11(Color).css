@@ -1,0 +1,19 @@
+/*Color Name*/
+h1 {
+    color: blue;
+    background-color: rosybrown;
+}
+/*HEX Code*/
+h2 {
+    color: #ee3e80;
+    background-color: #112233;
+}
+h3 {
+    color: #112233;
+    background-color: #654321;
+}
+/*RGB Value*/
+p {
+    color: rgb(183, 141, 193);
+    background-color: rgb(231, 81, 81);
+}

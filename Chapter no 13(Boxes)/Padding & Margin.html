@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Padding & Margin</title>
+        <style type="text/css">
+            .para-pad-one {
+            width: 600px;
+            color: blue;
+            border: 3px solid red;
+            padding: 3px;
+        }
+            .div-pad-one {
+                width: 650px;
+                color: blue;
+                border: 3px solid red;
+                padding-top: 3px;
+                padding-right: 2px;
+                padding-bottom: 3px;
+                padding-left: 2px;
+                }
+            .para-mar-one {
+                width: 600px;
+                border: 3px solid royalblue;
+                padding: 3px;
+                margin: 5px;
+            }
+            .div-mar-one {
+                width: 700px;
+                border: 3px solid royalblue;
+                padding: 3px;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PADDING</h1>
+        <h2>padding</h2>
+        <p class="para-pad-one">The padding property allows you to specify how much space should appear between the content of an element and its border. </p>
+        <p class="para-pad-one">The value of this property is most often specified in pixels (although it is also possible to use percentages or ems). If a percentage is used,
+            the padding is a percentage of the browser window (or of the containing box if it is inside another box).</p>
+        <div class="div-pad-one">
+            <p>You can specify different values for each side of a box using:</p>
+            <ul>
+                <li>padding-top</li>
+                <li>padding-right</li>
+                <li>padding-bottom</li>
+                <li>padding-left</li>
+            </ul>
+            <p>Or you can use a shorthand (where the values are in clockwise order: top, right, bottom, left):</p>
+        </div>
+        <hr />
+        <h1>MARGIN</h1>
+        <h2>margin</h2>
+        <p class="para-mar-one">The margin property controls the gap between boxes. Its value is commonly given in pixels, although you may also use percentages or ems.</p>
+        <p class="para-mar-one">If one box sits on top of another, margins are collapsed , which means the larger of the two margins will be used and the smaller will be
+            disregarded.</p>
+        <div class="div-mar-one">
+            <p>You can specify values for each side of a box using:</p>
+            <ul>
+                <li>margin-top</li>
+                <li>margin-right</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+            </ul>
+            <p>You can also use the shorthand (where the values are in clockwise order: top, right, bottom, left):<br />margin: 1px 2px 3px 4px;<br />
+                Sometimes you might see the following, which means that the left and right margins should be 10 pixels and the top and bottom margins should
+                be 20 pixels: margin: 10px 20px;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Shadow</title>
+        <style type="text/css">
+            p {
+                width: 30%;
+                height: 70px;
+                background-color: #e1ddda;
+                margin: 5px;
+                padding: 5px;
+            }
+            .para-HO-SB {
+                /*-moz-box-shadow: -5px -5px #777777;
+                -webkit-box-shadow: -5px -5px #777777;*/
+                box-shadow: -5px -5px #777777;
+            }
+            .para-VO-SB {
+                /*-moz-box-shadow: 5px 5px 5px #777777;
+                -webkit-box-shadow: 5px 5px 5px #777777;*/
+                box-shadow: 5px 5px 5px #777777;
+            }
+            .para-BD-SB {
+                /*-moz-box-shadow: 5px 5px 5px 5px #777777;
+                -webkit-box-shadow: 5px 5px 5px 5px #777777;*/
+                box-shadow: 5px 5px 5px 5px #777777;
+            }
+            .para-SS-SB {
+                /*-moz-box-shadow: 0 0 10px #777777;
+                -webkit-box-shadow: 0 0 10px #777777;*/
+                box-shadow: 0 0 10px #777777;
+                margin-bottom: 10px;
+            }
+            .para-SS-SB-one {
+                /*-moz-box-shadow: inset 0 0 10px #777777;
+                -webkit-box-shadow: inset 0 0 10px #777777;*/
+                box-shadow: inset 0 0 10px #777777;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS3: BOX SHADOW</h1>
+        <h2>Box Shadow</h2>
+        <p>The box-shadow property allows you to add a drop shadow around a box. It works just like the text-shadow property. It must use at least the
+            first of these two values as well as a color:</p>
+        <ul>
+            <li><h3>Horizontal offset</h3></li>
+            <p class="para-HO-SB">Negative values position the shadow to the left of the box</p>
+            <li><h3>Vertical offset</h3></li>
+            <p class="para-VO-SB">Negative values position the shadow to the top of the box.</p>
+            <li><h3>Blur distance</h3></li>
+            <p class="para-BD-SB">If omitted, the shadow is a solid line like a border</p>
+            <li><h3>Spread of shadow</h3></li>
+            <p class="para-SS-SB">If used, a positive value will cause the shadow to expand in all directions, and a negative value will make it contract.</p>
+            <p class="para-SS-SB-one">The inset keyword can also be used before these values to create an inner-shadow</p>
+            <!--Chrome, Firefox, and Safari were quick to support this property using the -moz-box-shadow and -webkit-box-shadow properties. These are not in
+                the CSS specification but using them can help this style to work in these browsers.-->
+        </ul>
+    </body>
+</html>

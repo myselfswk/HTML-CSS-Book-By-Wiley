@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute Selector</title>
+        <style type="text/css">
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th width="33%">Selector</th>
+                <th width="33%">Meaning</th>
+                <th width="33%">Example</th>
+            </tr>
+            <tr>
+                <td>Existence</td>
+                <td>[]<br />Matches a specific attribute (whatever its value)</td>
+                <td>p[class]<br />Targets any p element with an attribute called class</td>
+            </tr>
+            <tr>
+                <td>Equality</td>
+                <td>[=]<br />Matches a specific attribute with a specific value</td>
+                <td>p[class="dog"]<br />Targets any p element with an attribute called class whose value is dog</td>
+            </tr>
+            <tr>
+                <td>Space</td>
+                <td>[~=]<br />Matches a specific attribute whose value appears in a spaceseparated list of words</td>
+                <td>p[class~="dog"]<br />Targets any p element with an attribute called class whose value is a list of space-separated words, one of which
+                    is dog</td>
+            </tr>
+            <tr>
+                <td>Prefix</td>
+                <td>[^=]<br />Matches a specific attribute whose value begins with a specific string</td>
+                <td>p[attr^"d"]<br />Targets any p element with an attribute whose value begins with the letter "d"</td>
+            </tr>
+            <tr>
+                <td>SubString</td>
+                <td>[*=]<br />Matches a specific attribute whose value contains a specific substring</td>
+                <td>p[attr*"do"]<br />Targets any p element with an attribute whose value contains the letters "do"</td>
+            </tr>
+            <tr>
+                <td>Suffix</td>
+                <td>[$=]<br />Matches a specific attribute whose value ends with a specific string</td>
+                <td>p[attr$"g"]<br />Targets any p element with an attribute whose value ends with the letter "g"</td>
+            </tr>
+        </table>
+    </body>
+</html>

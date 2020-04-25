@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alignment</title>
+        <style type="text/css">
+            #text-left {
+                text-align: left;
+            }
+            #text-right {
+                text-align: right;
+            }
+            #text-center {
+                text-align: center;
+            }
+            #text-justify {
+                text-align: justify;
+            }
+            img {
+                width: 45%;
+                height: 400px;
+            }
+            #text-VA-T {
+                vertical-align: text-top;
+            }
+            #text-VA-BL {
+                vertical-align: baseline;
+            }
+            #text-VA-B {
+                vertical-align: bottom;
+            }
+            #text-VA-sub {
+                vertical-align: sub;
+            }
+            #text-VA-sup {
+                vertical-align: super;
+            }
+            #text-VA-top {
+                vertical-align: top;
+            }
+            #text-VA-M {
+                vertical-align: middle;
+            }
+            #text-VA-bottom {
+                vertical-align: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Alignment</h1>
+        <h2>text-align</h2>
+        <p>The text-align property allows you to control the alignment of text. The property can take one of four values:</p>
+        <ol>
+            <li><h3>left</h3></li>
+            <p id="text-left">This indicates that the text should be left-aligned.</p>
+            <li><h3>right</h3></li>
+            <p id="text-right">This indicates that the text should be right-aligned.</p>
+            <li><h3>center</h3></li>
+            <p id="text-center">This allows you to center text.</p>
+            <li><h3>justify</h3></li>
+            <p id="text-justify">This indicates that every line in a paragraph, except the last line, should be set to take up the full width of the containing box.</p>
+        </ol>
+        <hr />
+        <h1>Vertical Alignment</h1>
+        <h2>vertical-align</h2>
+        <p>The vertical-align property is a common source of confusion. It is not intended to allow you to vertically align text in the middle of block level
+            elements such as p and div element, although it does have this effect when used with table cells (the td and th elements).</p>
+        <p>It is more commonly used with inline elements such as img, em, or strong elements. When used with these elements, it performs a task very similar to
+            the HTML align attribute used on the img element</p>
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-T">Muhammad Waleed Khan(text-top)
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-BL">Muhammad Waleed Khan(baseline)
+        <!--there is more gap at the end of the baseline than botton img-->
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-B">Muhammad Waleed Khan(bottom)
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-sub">Muhammad Waleed Khan(sub)
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-sup">Muhammad Waleed Khan(super)
+        <!--img is like power sign to the value(text given below)-->
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-top">Muhammad Waleed Khan(top)
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-M">Muhammad Waleed Khan(middle)
+        <hr />
+        <img src="Images/MyPic.jpg" alt="Muhammad Waleed Khan" id="text-VA-bottom">Muhammad Waleed Khan(bottom)
+        <hr />
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centering Content</title>
+        <style type="text/css">
+            body {
+                text-align: center;
+            }
+            p {
+                width: 500px;
+                padding: 10px;
+                border: 3px solid sienna;
+                margin: 10px auto 10px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Centering Content</h1>
+        <p>If you want to center a box on the page (or center it inside the element that it sits in), you can set the left-margin and right-margin to auto.</p>
+        <p>In order to center a box on the page, you need to set a width for the box (otherwise it will take up the full width of the page).</p>
+        <p>Once you have specified the width of the box, setting the left and right margins to auto will make the browser put an equal gap on each side
+            of the box. This centers the box on the page (or within the element that the box sits inside).</p>
+        <p>In order for this to work in older browsers (particularly IE6), the element that the box sits inside should have a text-align property with its
+            value set to center. </p>
+        <p>When you specify the width of a box, any padding or margin should be added to the width of it. Internet Explorer 6, however, has a quirk whereby
+            it includes the padding and margins in the width of the box.</p>
+        
+    </body>
+</html>

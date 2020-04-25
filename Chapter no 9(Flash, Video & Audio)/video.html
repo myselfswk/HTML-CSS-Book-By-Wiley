@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Videos By html5</title>
+    </head>
+    <body>
+        <h1>Single Video Source</h1>
+        <h1>Video</h1>
+        <p>Video tag is used to play videos to your website.The video element has a number of attributes which allow you to control video playback:</p>
+        <ul>
+            <li><h2>src</h2></li>
+            <p>This attribute specifies the path to the video. (The example video is in mp4 format so it will be work in all browsers)</p>
+            <li><h2>Poster</h2></li>
+            <p>This attribute allows you to specify an image to show while the video is downloading or until the user tells the video to play.</p>
+            <li><h2>Width, Height</h2></li>
+            <p>These attributes specify the size of the player in pixels.</p>
+            <li><h2>Controls</h2></li>
+            <p>When used, this attribute indicates that the browser should supply its own controls for playback.</p>
+            <li><h2>autoplay</h2></li>
+            <p>When used, this attribute specifies that the file should play automatically.</p>
+            <li><h2>loop</h2></li>
+            <p>When used, this attribute indicates that the video should start playing again once it has ended.</p>
+            <li><h2>preload</h2></li>
+            <p>This attribute tells the browser what to do when the page loads. It can have one of three values: </p>
+            <ol>
+                <li><h3>none</h3></li>
+                <p>The browser should not load the video until the user presses play.</p>
+                <li><h3>auto</h3></li>
+                <p>The browser should download the video when the page loads</p>
+                <li><h3>metadata</h3></li>
+                <p>The browser should just collect information such as the size, first frame, track list, and duration.</p>
+            </ol>
+        </ul>
+        <video src="video/yehToHoga.mp4" poster="images/MyPic.jpg" width="400" height="300" autoplay preload="none" controls loop>
+            <p>A video of a puppy playing in the snow</p>
+        </video>
+        <h1>Multiple Video Source</h1>
+        <h2>Source Tag</h2>
+        <p>To specify the location of the file to be played, you can use the source element inside the video element. (This should replace the src attribute
+            on the opening video tag). You can also use multiple source elements to specify that the video is available in different formats</p>
+        <ol>
+            <li><h3>src</h3></li>
+            <p>This attribute specifies the path to the video.</p>
+            <li><h3>type</h3></li>
+            <p>You should use this attribute to tell the browser what format the video is. Otherwise, it will download some of the video to see if it can play
+                the file (which will take time and bandwidth).</p>
+            <li><h3>codecs</h3></li>
+            <p>The codec that was used to encode the video is supplied within the type attribute. Note the use of single quotes, as well as double quotes in
+                the type attribute, when it is supplied</p>
+            <!--If the browser does not support the <video> element or the format of video used, it will display whatever is between the opening <video>
+                and closing </video> tags.-->
+        </ol>
+        <video poster="images/MyPic.jpg" width="400" height="320" preload="none" controls loop>
+            <source src="Video/yehToHoga.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+            <source src="Video/big-buck-bunny_trailer.webm" type='video/webm;codecs="vp8, vorbis"' />
+            <!--this second source video is not display top on the webpage because the source tag is used for same videos with different formats
+                not for two different videos to be display-->
+            <p>A video of a puppy playing in the snow</p>
+        </video>
+    </body>
+</html>

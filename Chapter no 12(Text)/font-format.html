@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="author" content="Muhammad Waleed Khan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>font-format</title>
+        <style type="text/css">
+            @font-face {
+            font-family: 'ChunkFiveRegular';
+            src: url('fonts/chunkfive.eot');
+            src: url('fonts/chunkfive.eot?#iefix') format('embedded-opentype'), url('fonts/chunkfive.woff') format('woff'), url('fonts/chunkfive.ttf')
+                format('truetype'), url('fonts/chunkfive.svg#ChunkFiveRegular') format('svg');
+            }
+            #normal {
+                font-weight: normal;
+            }
+            #bolder {
+                font-weight: bold;
+            }
+            #normal-text {
+                font-style: normal;
+            }
+            #italic-text {
+                font-style: italic;
+            }
+            #oblique-text {
+                font-style: oblique;
+            }
+            #headingForUC {
+                text-transform: uppercase;
+            }
+            #headingForC {
+                text-transform: capitalize;
+            }
+            #paraForLC {
+                text-transform: lowercase;
+            }
+            a {
+                text-decoration: none;
+            }
+            #text-underline {
+                text-decoration: underline;
+            }
+            #text-overline {
+                text-decoration: wavy overline;
+            }
+            #text-lineThrough {
+                text-decoration: line-through;
+            }
+            #text-blink {
+                text-decoration: blink;
+            }
+            .text-lineHeight {
+                line-height: 1.4em;
+            }
+            .letter-spacing {
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+            }
+            .word-spacing {
+                font-weight: bold;
+                word-spacing: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Understanding Font Format</h1>
+        <p>Different browsers support different formats for fonts (in the same way that they support different audio and video formats), so you will need
+            to supply the font in several variations to reach all browsers. If you do not have all of these formats for your font, you can upload the font
+            to a website called FontSquirrel where they will convert it for you: </p>
+        <p><a href="https://www.fontsquirrel.com/">Font Generator</a></p>
+        <p>Font Squirrel also provides you with the CSS code for the @font-face rule. This is very helpful because, when you are dealing with multiple font
+            formats, the src and format properties of the @font-face rule can get rather complicated.</p>
+        <hr />
+        <h1>BOLD:</h1>
+        <h2>font-weight</h2>
+        <p>The font-weight property allows you to create bold text. There are two values that this property commonly takes:</p>
+        <ol>
+            <li><h3>normal</h3></li>
+            <p id="normal">This causes text to appear at a normal weight</p>
+            <li><h3>Bold</h3></li>
+            <p id="bolder">This causes text to appear bold</p>
+        </ol>
+        <hr />
+        <h1>ITALIC:</h1>
+        <h2>font-style</h2>
+        <p>If you want to create italic text, you can use the font-style property. There are three values this property can take:</p>
+        <ol>
+            <li><h3>normal</h3></li>
+            <p id="normal-text">This causes text to appear in a normal style (as opposed to italic or oblique).</p>
+            <li><h3>italic</h3></li>
+            <p id="italic-text">This causes text to appear italic.</p>
+            <li><h3>oblique</h3></li>
+            <p id="oblique-text">This causes text to appear oblique.</p>
+        </ol>
+        <hr />
+        <h1 id="headingForUC">UpperCase & LowerCase</h1>
+        <h2 id="headingForC">text-transform</h2>
+        <p class="paraForLC">The text-transform property is used to change the case of text giving it one of the following values:</p>
+        <ul>
+            <li><h3>uppercase</h3></li>
+            <p class="paraForLC">This causes the text to appear uppercase.</p>
+            <li><h3>lowercase</h3></li>
+            <p class="paraForLC">This causes the text to appear lowercase.</p>
+            <li><h3>capitalize</h3></li>
+            <p class="paraForLC">This causes the first letter of each word to appear capitalized.</p>
+        </ul>
+        <hr />
+        <h1>Underline & Strike</h1>
+        <h2>text-decoration</h2>
+        <p>The text-decoration property allows you to specify the following values:</p>
+        <ul>
+            <li><h3>none</h3></li>
+            <p>This removes any decoration already applied to the text, like remove underline from links.</p>
+            <p>Example: <a href="https://www.facebook.com/myselfswk/">@myselfswk</a></p>
+            <li><h3>underline</h3></li>
+            <p id="text-underline">This adds a line underneath the text.</p>
+            <li><h3>overline</h3></li>
+            <p id="text-overline">This adds a line over the top of the text.</p>
+            <li><h3>line-through</h3></li>
+            <p id="text-lineThrough">This adds a line through words.</p>
+            <li><h3>blink</h3></li>
+            <p id="text-blink">This animates the text to make it flash on and off (however this is generally frowned upon, as it is considered rather
+                annoying).</p>
+        </ul>
+        <hr />
+        <h1>LEADING</h1>
+        <h2>line-height</h2>
+        <p class="text-lineHeight">Leading (pronounced ledding) is a term typographers use for the vertical space between lines of text. In a typeface, the part of a letter that
+            drops beneath the baseline is called a descender, while the highest point of a letter is called the ascender. Leading is measured from
+            the bottom of the descender on one line to the top of the ascender on the next</p>
+        <p class="text-lineHeight">In CSS, the line-height property sets the height of an entire line of text, so the difference between the fontsize and the line-height is
+            equivalent to the leading </p>
+        <hr />
+        <h1 class="letter-spacing">Letter & Word Spacing</h1>
+        <h2 class="letter-spacing">letter-spacing, word-spacing</h2>
+        <p class="word-spacing">
+            <b>letter-spacing</b>: Kerning is the term typographers use for the space between each letter. You can control the space between each letter with
+            the letter-spacing property. It is particularly helpful to increase the kerning when your heading or sentence is all in uppercase. If your text
+            is in sentence (or normal) case, increasing or decreasing the kerning can make it harder to read.</p>
+        <p class="word-spacing">
+            <b>Word Spacing</b>: You can also control the gap between words using the word-spacing property. When you specify a value for these properties, it
+            should be given in ems, and it will be added on top of the default value specified by the font.</p>
+    </body>
+</html>

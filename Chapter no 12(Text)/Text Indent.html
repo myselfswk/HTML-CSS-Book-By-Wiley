@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="author" content="Muhammad Waleed Khan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Indent</title>
+        <style type="text/css">
+            h1 {
+                background-image: url('Images/BG-Image.PNG');
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                /* negative value shift text from right to left(higher value may set text out of the browser)*/
+                color: white;
+            }
+            .paraIndent {
+                text-indent: 30px;
+                /*positive value shift text from left to right, but if the line ends they send text to the next line according to browser width*/
+            }
+        </style>
+    </head>
+    <body>
+        <!--The text-indent property allows you to indent the first line of text within an element. The amount you want the line indented by can be specified in
+            a number of ways but is usually given in pixels or ems.-->
+        <!--It can take a negative value, which means it can be used to push text off the browser window.-->
+        <!--We still want the heading text to be on the page (for search engines and those who cannot see the image), but we cannot have it displayed on top
+            of the logo or it will be unreadable. By pushing it 9,999 pixels to the left, it is way out of sight but still in the HTML code.-->
+        <h1>Muhammad Waleed Khan</h1>
+        <p>Note:- this image contain text bu because of text-indent negative value it's disappear from browser, but still exist</p>
+        <p class="paraIndent">My Name is Muhammad Waleed Khan</p>
+    </body>
+</html>
