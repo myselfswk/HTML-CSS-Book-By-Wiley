@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Element</title>
+        <style type="text/css">
+            /*overlapping element*/
+            .zIndex-H {
+                background-color: #efefef;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                /*z-index: 10;*/
+            }
+            .zIndex-P {
+                position: fixed;
+                top: 70px;
+                left: 70px;
+            }
+            /*floating element*/
+            blockquote {
+                float: right;
+                width: 250px;
+                background-color: #efefef;
+                font-size: large;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10px;
+                padding: 10px;
+                border-top: 1px solid #665544;
+                border-bottom: 1px solid #665544;
+            }
+            /*float element side by side*/
+            .Div-F {
+                background-color: #665544;
+                border: 1px solid #efefef;
+                width: 750px;
+            }
+            .Para-F {
+                float: left;
+                width: 230px;
+                padding: 5px;
+                margin: 5px;
+                background-color: #efefef;
+            }
+            /*clear*/
+            .clear {
+                clear: left;
+            }
+            .clear-T {
+                clear: both;
+            }
+            .Div-OF {
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Overlapping Elements</h1>
+        <h2 class="zIndex-H">z-index</h2>
+        <p class="zIndex-P">When you use relative, fixed, or absolute positioning, boxes can overlap. If boxes do overlap, the elements that appear later in the HTML code
+            sit on top of those that are earlier in the page. If you want to control which element sits on top, you can use the z-index property. Its value
+            is a number, and the higher the number the closer that element is to the front. For example, an element with a z-index of 10 will appear over
+            over the top of one with a z-index of 5.</p>
+        <p class="zIndex-P">The z-index is sometimes referred to as the stacking context (as if the blocks have been stacked on top of each other on a z axis). If you are
+            familiar with desktop publishing packages, it is the equivalent of using the 'bring to front' and 'send to back' features.</p>
+        <br /><br /><br />
+        <hr />
+        <h1>Floating Elements</h1>
+        <h2>float</h2>
+        <blockquote>"Life is like riding a bicycle. To keep your balance you must keep moving." - Albert Einstein</blockquote>
+        <p>The float property allows you to take an element in normal flow and place it as far to the left or right of the containing element as possible.
+            Anything else that sits inside the containing element will flow around the element that is floated.</p>
+        <p>When you use the float property, you should also use the width property to indicate how wide the floated element should be. If you do not, results
+            can be inconsistent but the box is likely to take up the full width of the containing element (just like it would in normal flow).</p>
+        
+        <br /><hr />
+        <div class="Div-F">
+            <h1>Using Float to Place Elements Side-by-Side</h1>
+            <p class="Para-F">A lot of layouts place boxes next to each other. The float property is commonly used to achieve this</p>
+            <p class="Para-F">When elements are floated, the height of the boxes can affect where the following elements sit.</p>
+            <p class="Para-F">In this example, you can see six paragraphs, each of which has a width and a float property set.</p>
+            <p class="Para-F">The fourth paragraph does not go across to the left hand edge of the page as one might expect. Rather it sits right under the
+                third paragraph.</p>
+            <p class="Para-F">The reason for this is that the fourth paragraph has space to start under the third paragraph, but it cannot go any further to
+                the left because the second paragraph is in the way</p>
+            <p class="Para-F">Setting the height of the paragraphs to be the same height as the tallest paragraph would solve this issue, but it is rarely
+                suited to real world designs where the amount of text in a paragraph or column may vary. It is more common to use the clear property
+                (discussed on the next page) to solve this issue.</p>
+        </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <hr />
+        <h1>Clearing Floats</h1>
+        <h2>clear</h2>
+        <div class="Div-F">
+            <p class="Para-F">The clear property allows you to say that no element (within the same containing element) should touch the left or righthand
+                sides of a box. It can take the following values:</p>
+            <p class="Para-F"><b>left</b> The left-hand side of the box should not touch any other elements appearing in the same containing element.</p>
+            <p class="Para-F"><b>right</b> The right-hand side of the box will not touch elements appearing in the same containing element.</p>
+            <p class="Para-F clear"><b>both</b> Neither the left nor right-hand sides of the box will touch elements appearing in the same containing element.</p>
+            <p class="Para-F"><b>none</b> Elements can touch either side</p>
+            <p class="Para-F">In this example, the fourth paragraph has a class called clear. The CSS rule for this class uses the clear property to indicate
+                that nothing should touch the left-hand side of it. The fourth paragraph is therefore moved further down the page so no other element touches
+                its left-hand side.</p>
+        </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> <br /><br />
+        <hr />
+        <h1>Parents of Floated Elements: Problem</h1>
+        <p>Note:- Book Content</p>
+        <div class="Div-F">
+			<p class="Para-F">In 1817 Baron von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
+			<p class="Para-F">The device know as the Draisienne (or "hobby horse") was made of wood, and propelled by pushing your feet on the ground in a
+                gliding movement.</p>
+			<p class="Para-F">It was not seen as suitable for any place other than a well maintained pathway. </p>
+			<p class="Para-F clear-T">In 1865, the velocipede (meaning "fast foot") attached pedals to the front wheel, but its wooden structure made it
+                extremely uncomfortable.</p>
+			<p class="Para-F">In 1870 the first all-metal machine appeared. The pedals were attached directly to the front wheel.</p>
+			<p class="Para-F">Solid rubber tires and the long spokes of the large front wheel provided a much smoother ride than its predecessor.</p>
+		</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <hr />
+        <h1>Parents of Floated Elements: Solution</h1>
+        <p>Note:- Book Content</p>
+        <div class="Div-F Div-OF">
+			<p class="Para-F">In 1817 Baron von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
+			<p class="Para-F">The device know as the Draisienne (or "hobby horse") was made of wood, and propelled by pushing your feet on the ground in a
+                gliding movement.</p>
+			<p class="Para-F">It was not seen as suitable for any place other than a well maintained pathway. </p>
+			<p class="Para-F clear-T">In 1865, the velocipede (meaning "fast foot") attached pedals to the front wheel, but its wooden structure made it
+                extremely uncomfortable.</p>
+			<p class="Para-F">In 1870 the first all-metal machine appeared. The pedals were attached directly to the front wheel.</p>
+			<p class="Para-F">Solid rubber tires and the long spokes of the large front wheel provided a much smoother ride than its predecessor.</p>
+		</div>
+        <hr />
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Rollovers & Sprites</title>
+        <style type="text/css">
+            .button {
+                height: 36px;
+                text-indent: -9999;
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 50px;
+                box-shadow: black;
+                background-color: #EAEAEA;
+            }
+            a {
+                text-align: center;
+            }
+            #add-to-basket {
+                width: 175px;
+                background: #EAEAEA url('Images/button-sprite.PNG') no-repeat top right;
+                background-position: 0px 0px;
+            }
+            #framing-options {
+                width: 210px;
+                background: #EAEAEA url('Images/button-sprite-T.PNG') no-repeat top right;
+                background-position: -175px 0px;
+            }
+            #add-to-basket:hover {
+                color: green;
+            }
+            a#framing-options:hover {
+                color: green;
+            }
+			a#add-to-basket:active {
+				background-position: 0px -80px;
+            }
+			a#framing-options:active {
+				background-position: -175px -80px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Image Rollovers & Sprites</h1>
+        <!--Using CSS, it is possible to create a link or button that changes to a second style when a user moves their mouse over it (known as a rollover)
+            and a third style when they click on it-->
+        <!--This is achieved by setting a background image for the link or button that has three different styles of the same button (but only allows enough
+            space to show one of them at a time). -->
+        <a href="" class="button" id="add-to-basket">Add To Basket</a>
+        <a href="" class="button" id="framing-options">Framing Options</a>
+        <!--When the user moves their mouse over the element, or clicks on it, the position of the background image is moved to show the relevant image.
+            When a single image is used for several different parts of an interface, it is known as a sprite. You can add the logo and other interface
+            elements, as well as buttons to the image.-->
+    </body>
+</html>

@@ -1,0 +1,25 @@
+/*empty cells*/
+.td-style {
+    width: 50px;
+    height: 60px;
+    border: 5px solid red;
+    text-align: center;
+    background-color: #e1ddda;
+}
+.table-style-O {
+    empty-cells: show;
+    display: inline;
+}
+.table-style-T {
+    empty-cells: hide;
+    display: inline;
+}
+/*Gaps Between cells*/
+.table-seperate {
+    border-spacing: 5px 15px;
+    display: inline;
+}
+.table-collapse {
+    border-collapse: collapse;
+    display: inline;
+}

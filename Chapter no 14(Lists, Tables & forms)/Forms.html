@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="stylesheet" href="Forms.css">
+    </head>
+    <body>
+        <h1>Styling Forms</h1>
+        <!--Nobody I know enjoys filling in forms, so if you can make yours look more attractive and easier to use, more people are likely to fill it in.
+            Also, when you come to look at a form in a few different browsers (as shown on the right), you will see that each browser displays them differently.
+            CSS is commonly used to control the appearance of form elements. This is both to make them more attractive and to make them more consistent
+            across different browsers-->
+        <h2>Styling Text Inputs</h2>
+        <p>This example demonstrates the CSS properties commonly used with text inputs, most of which you have already met. </p>
+        <ul>
+            <li><b>font-size</b> sets the size of the text entered by the user.</li>
+            <li><b>color</b> sets the text color, and <b>background-color</b> sets the background color of the input.</li>
+            <li><b>border</b> adds a border around the edge of the input box, and <b>border-radius</b> can be used to create rounded corners (for browsers
+                that support this property).</li>
+            <li>The <b>:focus</b> pseudo-class is used to change the background color of the text input when it is being used, and the <b>:hover</b>
+                psuedo-class applies the same styles when the user hovers over them.</li>
+            <li><b>background-image</b> adds a background image to the box. Because there is a different image for each input, we are using an attribute selector
+                looking for the value of the id attribute on each input.</li>
+        </ul>
+        <input type="text" class="input-text email">
+        <input type="text" class="input-text twitter">
+        <input type="text" class="input-text web">
+        <hr />
+        <h1>Styling Submit Buttons</h1>
+        <p>Here are some properties that can be used to style submit buttons</p>
+        <ul>
+            <li><b>color</b> is used to change the color of the text on the button.</li>
+            <li><b>text-shadow</b> can give a 3D look to the text in browsers that support this property.</li>
+            <li><b>border-bottom</b> has been used to make the bottom border of the button slightly thicker, which gives it a more 3D feel</li>
+            <li><b>background-color</b> can make the submit button stand out from other items around it. </li>
+            <li>The <b>:hover</b> pseudo-class has been used to change the appearance of the button when the user hovers over it. In this case, the
+                background changes, the text gets darker, and the thicker border is applied to the top of the button.</li>
+        </ul>
+        <input type="button" class="input-button" value="Submit">
+        <hr />
+    </body>
+</html>

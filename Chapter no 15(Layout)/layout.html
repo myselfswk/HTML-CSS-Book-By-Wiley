@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout</title>
+        <style type="text/css">
+            b {
+                color: purple;
+            }
+            .Div-first {
+                float: left;
+                width: 600px;
+                margin: 10px;
+                padding: 5px;
+                background-color: #efefef;
+            }
+            .Div-second {
+                float: left;
+                width: 200px;
+                margin: 10px;
+                padding: 5px;
+                background-color: #efefef;
+            }
+            .Div-third {
+                float: left;
+                width: 200px;
+                margin: 10px;
+                padding: 5px;
+                background-color: #efefef;
+            }
+            /*A Fixed Width Layout*/
+            .all-C {
+                width: 960px;
+                text-align: center;
+                color: #665544;
+            }
+            #content {
+                overflow: auto;
+                height: 100%;
+            }
+            #nav, #feature, #footer {
+                background-color: #efefef;
+                padding: 10px;
+                margin: 10px;
+            }
+            .column1, .column2, .column3 {
+                background-color: #efefef;
+                float: left;
+                width: 300px;
+                margin: 10px;
+            }
+            a {
+                text-decoration: none;
+            }
+            .li-inline {
+                display: inline;
+                padding: 10px;
+            }
+            /*A liquid Layout*/
+            .all-C-T {
+                width: 91%;
+                text-align: center;
+                color: #665544;
+            }
+            #content-T {
+                overflow: auto;
+                height: 100%;
+            }
+            #nav-T, #feature-T, #footer-T {
+                background-color: #efefef;
+                padding: 1%;
+                margin: 1%;
+            }
+            .column1-T, .column2-T, .column3-T {
+                background-color: #efefef;
+                float: left;
+                width: 31.3%;
+                margin: 1%;
+            }
+            .li-inline-T {
+                display: inline;
+                padding: 1%;
+            }
+            /**/
+            .main-div {
+                width: 980px;
+                text-align: center;
+                overflow: auto;
+            }
+            .para-first {
+                width: 940px;
+                height: 50px;
+                padding-top: 20px;
+                margin-left: 10px;
+                background-color: #efefef;
+                border: 1px solid black;
+            }
+            .para-second {
+                width: 460px;
+                height: 50px;
+                padding-top: 20px;
+                background-color: #efefef;
+                border: 1px solid black;
+                margin: 10px;
+                float: left;
+            }
+            .para-third {
+                width: 300px;
+                height: 50px;
+                padding-top: 20px;
+                background-color: #efefef;
+                border: 1px solid black;
+                margin: 10px;
+                float: left;
+            }
+            .para-four {
+                width: 220px;
+                height: 50px;
+                padding-top: 20px;
+                background-color: #efefef;
+                border: 1px solid black;
+                margin: 10px;
+                float: left;
+            }
+            .para-five {
+                width: 140px;
+                height: 50px;
+                padding-top: 20px;
+                background-color: #efefef;
+                border: 1px solid black;
+                margin: 10px;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>creating Multi-Column Layouts with Floats</h1>
+        <div class="Div-first">
+            <p>Many web pages use multiple columns in their design. This is achieved by using a div element to represent each column. The following three CSS
+                properties are used to position the columns next to each other<br /><br />width<br />float<br />Margin</p>
+            <p>A two-column layout like the one shown on this page would need two div elements, one for the main content of the page and one for the sidebar.
+                Inside each of the div elements there can be headings, paragraphs, images, and even other div elements.</p>
+        </div>
+        <div class="Div-second">
+            <ul>
+                <li><b>width</b> This sets the width of the columns.</li>
+                <li><b>float</b> This positions the columns next to each other.</li>
+                <li><b>margin</b> This creates a gap between the columns.</li>
+            </ul>
+        </div>
+        <div class="Div-third">
+            <p>Here we create Multiple columns of data using divs & its all working because of float property</p>
+            <p>float property is very helpful to understand the mechanism of screen</p>
+        </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <hr />
+        <!--Different visitors to your site will have different sized screens that show different amounts of information, so your design needs to be able to
+            work on a range of different sized screens.-->
+        <!--Resolution refers to the number of dots a screen shows per inch. Some devices have a higher resolution than desktop computers and most
+            operating systems allow users to adjust the resolution of their screens.-->
+        <!--It is interesting to note that the higher the resolution, the smaller the text appears. Many mobile devices have screens that are higher
+            resolution than their desktop counterparts.-->
+        <h1>A Fixed Width Layout</h1>
+        <p>To create a fixed width layout, the width of the main boxes on a page will usually be specified in pixels (and sometimes their height, too).
+            You can see on the below example that div elements, each of which uses an id or class attribute to indicate its purpose on the page.</p>
+        <!--In a book like this, the result of both the fixed and liquid layouts look similar. To get a real feel for them, you need to view them in
+            your browser and see how they react when you adjust the size of the browser window.-->
+        <p>The fixed width layout will stay the same width no matter what size the browser window is, whereas the liquid layout will stretch (or shrink)
+            to fill the screen</p>
+        <h2>Example:-</h2>
+        <div class="all-C">
+            <div id="header">
+                <h1>Logo</h1>
+                <div id="nav">
+                    <ul>
+                    <li class="li-inline"><a href="">Home</a></li>
+                    <li class="li-inline"><a href="">Products</a></li>
+                    <li class="li-inline"><a href="">Services</a></li>
+                    <li class="li-inline"><a href="">About</a></li>
+                    <li class="li-inline"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div id="feature"><p>Feature</p></div>
+                <div class="article column1"><p>Column One</p></div>
+                <div class="article column2"><p>Column Two</p></div>
+                <div class="article column3"><p>Column Three</p></div>
+            </div>
+            <div id="footer"><p>&copy; Copyright 2020</p></div>
+        </div>
+        <hr />
+        <h1>A Liquid Layout</h1>
+        <p>The liquid layout uses percentages to specify the width of each box so that the design will stretch to fit the size of the screen.</p>
+        <h2>Example:-</h2>
+        <div class="all-C-T">
+            <div id="header-T">
+                <h1>Logo</h1>
+                <div id="nav-T">
+                    <ul>
+                    <li class="li-inline-T"><a href="">Home</a></li>
+                    <li class="li-inline-T"><a href="">Products</a></li>
+                    <li class="li-inline-T"><a href="">Services</a></li>
+                    <li class="li-inline-T"><a href="">About</a></li>
+                    <li class="li-inline-T"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-T">
+                <div id="feature-T"><p>Feature</p></div>
+                <div class="article-T column1-T"><p>Column One</p></div>
+                <div class="article-T column2-T"><p>Column Two</p></div>
+                <div class="article-T column3-T"><p>Column Three</p></div>
+            </div>
+            <div id="footer-T"><p>&copy; Copyright 2020</p></div>
+        </div>
+        <hr />
+        <h1>Layout Grids</h1>
+        <!--Composition in any visual art (such as design, painting, or photography) is the placement or arrangement of visual elements — how they are
+            organized on a page. Many designers use a grid structure to help them position items on a page, and the same is true for web designers.-->
+        <div class="main-div">
+            <p class="para-first">940px</p>
+            <p class="para-second">460px</p>
+            <p class="para-second">460px</p>
+            <p class="para-third">300px</p>
+            <p class="para-third">300px</p>
+            <p class="para-third">300px</p>
+            <p class="para-four">220px</p>
+            <p class="para-four">220px</p>
+            <p class="para-four">220px</p>
+            <p class="para-four">220px</p>
+            <p class="para-five">140px</p>
+            <p class="para-five">140px</p>
+            <p class="para-five">140px</p>
+            <p class="para-five">140px</p>
+            <p class="para-five">140px</p>
+            <p class="para-five">140px</p>
+        </div>
+        <hr />
+    </body>
+</html>

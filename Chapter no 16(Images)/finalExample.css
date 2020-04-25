@@ -1,0 +1,42 @@
+body {
+    color: #665544;
+    background-color: #d4d0c6;
+    background-image: url("Images/Shadow-BGI.PNG");
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+.wrapper {
+    width: 750px;
+    margin: 0px auto;
+}
+.header {
+    margin: 40px 0px 20px 0px;
+}
+.entry {
+    width: 220px;
+    float: left;
+    margin: 10px;
+    height: 200px;
+    /*background-image: url("images/shadow.png");*/
+    background-repeat: no-repeat;
+    /*background-position: bottom;*/
+}
+figure {
+    display: block;
+    width: 202px;
+    height: 175px;
+    background-color: #e7e3d8;
+    padding: 9px;
+    text-align: left;
+}
+figure img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #d6d6d6;
+}
+figcaption {
+    background-image: url("Images/shadowIcon.PNG");
+    padding-left: 22px;
+    padding-top: 2px;
+    background-repeat: no-repeat;
+}

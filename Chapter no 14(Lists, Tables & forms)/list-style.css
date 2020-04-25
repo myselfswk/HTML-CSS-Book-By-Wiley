@@ -1,0 +1,74 @@
+/*list-style-type*/
+#none {
+    list-style-type: none;
+}
+#circle {
+    list-style-type: circle;
+}
+#square {
+    list-style-type: square;
+}
+#disc {
+    list-style-type: disc;
+}
+.deci {
+    list-style-type: decimal;
+}
+.deci-LZ {
+    list-style-type: decimal-leading-zero;
+}
+.LO-A {
+    list-style-type: lower-alpha;
+}
+.UP-A {
+    list-style-type: upper-alpha;
+}
+.LO-R {
+    list-style-type: lower-roman;
+}
+.UP-R {
+    list-style-type: upper-roman;
+}
+/*list-style-type*/
+.LSI-N {
+    list-style-image: url('Images/iconForUL.PNG');
+    background-color: #e1ddda;
+    width: 15%;
+    padding: 5px;
+}
+/*Positioning The Marker*/
+.outside-UL {
+    width: 150px;
+    background-color: #e1ddda;
+    list-style-position: outside;
+}
+.inside-UL {
+    width: 150px;
+    background-color: #e1ddda;
+    list-style-position: inside;
+}
+.initial-UL {
+    width: 150px;
+    background-color: #e1ddda;
+    list-style-position: initial;
+}
+.inherit-UL {
+    width: 150px;
+    background-color: #e1ddda;
+    list-style-position: inherit;
+}
+/*list shorthand*/
+.list-style-O {
+    width: 150px;
+    background-color: #e1ddda;
+    list-style: inside circle;
+}
+.list-style-WI {
+    width: 150px;
+    height: 200px;
+    background-color: #e1ddda;
+    list-style: url('Images/iconForUL.PNG') outside;
+}
+.li-style {
+    padding: 5px;
+}

@@ -1,0 +1,31 @@
+/*Position Fixed*/
+.Posi-F {
+    background-color: #efefef;
+    position: fixed;
+}
+/*Position:Static*/
+.div-P-S {
+    position: static;
+}
+.Posi-H {
+    background-color: #efefef;
+    padding: 10px;
+}
+.Posi-P {
+    width: 450px;
+}
+/*Position Relative*/
+.Posi-P-R {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+/*Position Absolute*/
+.Posi-A {
+    background-color: #efefef;
+    position: absolute;
+    left: 500px;
+}
+.para-A {
+    width: 350px;
+}

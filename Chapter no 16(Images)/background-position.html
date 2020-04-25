@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Position</title>
+        <style type="text/css">
+            .div-BIP {
+                font-weight: bold;
+                padding: 5px;
+                background-image: url('Images/magnolia.jpg');
+                background-repeat: no-repeat;
+                background-position: center top;
+            }
+            .div-BIP-Per {
+                font-weight: bold;
+                padding: 5px;
+                background-image: url('Images/magnolia.jpg');
+                background-repeat: no-repeat;
+                background-position: 50% 50%;  /*up-down & left-right*/
+            }
+            .div-BIP-All {
+                font-weight: bold;
+                padding: 5px;
+                background: #ffffff url('Images/magnolia.jpg') no-repeat top right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Background Position</h1>
+        <h2>background-position</h2>
+        <!--When an image is not being repeated, you can use the background-position property to specify where in the browser window the background image
+            should be placed. This property usually has a pair of values. The first represents the horizontal position and the second represents the vertical.-->
+        <!--left top >> left center >> left bottom >> center top >> center center >> center bottom >> right top >> right center >> right bottom-->
+        <div class="div-BIP">
+            <h1>Magnolia</h1>
+            <p>Magnolia grandiflora, commonly known as the Southern magnolia or bull bay, is a tree of the family Magnoliaceae native to the southeastern
+                United States, from coastal Virginia south to central Florida, and west to eastern Texas and Oklahoma. Reaching 27.5 m (90 ft) in height,
+                it is a large striking evergreen tree with large dark green leaves and large white fragrant flowers. Widely cultivated around the world,
+                over a hundred cultivars have been bred and marketed commercially. The timber is hard and heavy, and has been used commercially to make
+                furniture, pallets, and veneer.</p>
+            <h1>Ranunculus</h1>
+            <p><b><i> asiaticus (Persian Buttercup)</i></b> is a species of buttercup (Ranunculus) native to the eastern Mediterranean region in
+                southwestern Asia, southeastern Europe (Crete, Karpathos and Rhodes), and northeastern Africa. It is a herbaceous perennial plant growing to
+                45 cm tall, with simple or branched stems. The basal leaves are three-lobed, with leaves higher on the stems more deeply divided; like the
+                stems, they are downy or hairy. The flowers are 3-5 cm diameter, variably red to pink, yellow, or white, with one to several flowers on each
+                stem.</p>
+            <h1>Tulipa</h1>
+            <p><b><i>Tulipa gesneriana L. or "Didier's tulip"</i></b> is a plant belonging to the family of Liliaceae. This species has uncertain origins,
+                possibly from Asia, and has become naturalised in south-west Europe. Most of the cultivated species, subspecies and cultivars of tulip are
+                derived from Tulipa gesneriana. The flower and bulb can cause dermatitis through the allergen, tuliposide A, even though the bulbs may be
+                consumed with little ill-effect. The sweet-scented bisexual flowers appear during April and May. Bulbs are extremely resistant to frost,
+                and can tolerate temperatures well below freezing - a period of low temperature is necessary to induce proper growth and flowering, triggered
+                by an increase in sensitivity to the phytohormone auxin. The bulbs may be dried and pulverised and added to cereals or flour.</p>
+        </div>
+        <hr />
+        <h1>Background Position(Percentage)</h1>
+        <div class="div-BIP-Per">
+            <h1>Magnolia</h1>
+            <p>Magnolia grandiflora, commonly known as the Southern magnolia or bull bay, is a tree of the family Magnoliaceae native to the southeastern
+                United States, from coastal Virginia south to central Florida, and west to eastern Texas and Oklahoma. Reaching 27.5 m (90 ft) in height,
+                it is a large striking evergreen tree with large dark green leaves and large white fragrant flowers. Widely cultivated around the world,
+                over a hundred cultivars have been bred and marketed commercially. The timber is hard and heavy, and has been used commercially to make
+                furniture, pallets, and veneer.</p>
+            <h1>Ranunculus</h1>
+            <p><b><i> asiaticus (Persian Buttercup)</i></b> is a species of buttercup (Ranunculus) native to the eastern Mediterranean region in
+                southwestern Asia, southeastern Europe (Crete, Karpathos and Rhodes), and northeastern Africa. It is a herbaceous perennial plant growing to
+                45 cm tall, with simple or branched stems. The basal leaves are three-lobed, with leaves higher on the stems more deeply divided; like the
+                stems, they are downy or hairy. The flowers are 3-5 cm diameter, variably red to pink, yellow, or white, with one to several flowers on each
+                stem.</p>
+            <h1>Tulipa</h1>
+            <p><b><i>Tulipa gesneriana L. or "Didier's tulip"</i></b> is a plant belonging to the family of Liliaceae. This species has uncertain origins,
+                possibly from Asia, and has become naturalised in south-west Europe. Most of the cultivated species, subspecies and cultivars of tulip are
+                derived from Tulipa gesneriana. The flower and bulb can cause dermatitis through the allergen, tuliposide A, even though the bulbs may be
+                consumed with little ill-effect. The sweet-scented bisexual flowers appear during April and May. Bulbs are extremely resistant to frost,
+                and can tolerate temperatures well below freezing - a period of low temperature is necessary to induce proper growth and flowering, triggered
+                by an increase in sensitivity to the phytohormone auxin. The bulbs may be dried and pulverised and added to cereals or flour.</p>
+        </div>
+        <hr />
+        <h1>shorthand</h1>
+        <h2>background</h2>
+        <!--The background property acts like a shorthand for all of the other background properties you have just seen, and also the background-color property.
+            The properties must be specified in the following order, but you can miss any value if you do not want to specify it.
+            1: background-color
+            2: background-image
+            3: background-repeat
+            4: background-attachment
+            5: background-position
+            CSS3 will also support the use of multiple background images by repeating the background shorthand. Because few browsers supported this property
+            at the time of writing, it was not commonly used.
+            div {
+                background: url(example-1.jpg) top left no-repeat, url(example-2.jpg) bottom left no-repeat, url(example-3.jpg) centre top repeat-x;
+            }-->
+        <div class="div-BIP-All">
+            <h1>Magnolia</h1>
+            <p>Magnolia grandiflora, commonly known as the Southern magnolia or bull bay, is a tree of the family Magnoliaceae native to the southeastern
+                United States, from coastal Virginia south to central Florida, and west to eastern Texas and Oklahoma. Reaching 27.5 m (90 ft) in height,
+                it is a large striking evergreen tree with large dark green leaves and large white fragrant flowers. Widely cultivated around the world,
+                over a hundred cultivars have been bred and marketed commercially. The timber is hard and heavy, and has been used commercially to make
+                furniture, pallets, and veneer.</p>
+            <h1>Ranunculus</h1>
+            <p><b><i> asiaticus (Persian Buttercup)</i></b> is a species of buttercup (Ranunculus) native to the eastern Mediterranean region in
+                southwestern Asia, southeastern Europe (Crete, Karpathos and Rhodes), and northeastern Africa. It is a herbaceous perennial plant growing to
+                45 cm tall, with simple or branched stems. The basal leaves are three-lobed, with leaves higher on the stems more deeply divided; like the
+                stems, they are downy or hairy. The flowers are 3-5 cm diameter, variably red to pink, yellow, or white, with one to several flowers on each
+                stem.</p>
+            <h1>Tulipa</h1>
+            <p><b><i>Tulipa gesneriana L. or "Didier's tulip"</i></b> is a plant belonging to the family of Liliaceae. This species has uncertain origins,
+                possibly from Asia, and has become naturalised in south-west Europe. Most of the cultivated species, subspecies and cultivars of tulip are
+                derived from Tulipa gesneriana. The flower and bulb can cause dermatitis through the allergen, tuliposide A, even though the bulbs may be
+                consumed with little ill-effect. The sweet-scented bisexual flowers appear during April and May. Bulbs are extremely resistant to frost,
+                and can tolerate temperatures well below freezing - a period of low temperature is necessary to induce proper growth and flowering, triggered
+                by an increase in sensitivity to the phytohormone auxin. The bulbs may be dried and pulverised and added to cereals or flour.</p>
+        </div>
+        <hr />
+    </body>
+</html>
